@@ -35,7 +35,7 @@ local Success, Response = pcall(function()
 end)
 
 if not Success then
-	warn("\nKey System - Ошибка загрузить иконки. Error code: " .. Response .. "\n")
+	warn("\nSUPERMAN SCRIPT - Ошибка загрузить иконки. Error code: " .. Response .. "\n")
 end	
 
 local function GetIcon(IconName)
@@ -225,7 +225,7 @@ local function LoadCfg(Config)
 				end    
 			end)
 		else
-			warn("Key System Конфиг лоадер - Не найден ", a ,b)
+			warn("SUPERMAN SCRIPT Конфиг лоадер - Не найден ", a ,b)
 		end
 	end)
 end
@@ -478,7 +478,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	if WindowConfig.IntroEnabled == nil then
 		WindowConfig.IntroEnabled = true
 	end
-	WindowConfig.IntroText = WindowConfig.IntroText or "Key System"
+	WindowConfig.IntroText = WindowConfig.IntroText or "SUPERMAN SCRIPT"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
